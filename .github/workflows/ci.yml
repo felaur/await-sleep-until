@@ -3,8 +3,14 @@ name: CI
 on:
   push:
     branches: ["main", "master"]
+    tags:
+      - "v*"
   pull_request:
     branches: ["main", "master"]
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
 
 jobs:
   build-and-test:
