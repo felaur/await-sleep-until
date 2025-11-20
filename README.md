@@ -16,5 +16,6 @@ Features:
 ## Installation
 
 ```sh
+
 npm install await-sleep-until
 ```
